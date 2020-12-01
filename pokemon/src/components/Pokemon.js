@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import PropTypes from 'prop-types';
 
 function Pokemon(props) {
+
+
+  console.log("Pokemon: Component Rendered.");
   return (
     <>
       {props.pokemon.map(pokemon => (
