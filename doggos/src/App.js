@@ -3,7 +3,7 @@ import axios from 'axios';
 
 class App extends React.Component {
     state = {
-        dogPic:[]
+        dogPics:[]
     }
 
     componentDidMount() {
@@ -11,13 +11,14 @@ class App extends React.Component {
             .then((resp)=> {
                 console.log(resp);
                 this.setState({
-                    dogPic: resp.data.message
+                    dogPics: resp.data.message
                 });
             })
             .catch(err=> console.log(err));
     }
 
     render() {
+        console.log(this.state.dogPics);
         return(<div>
             <h1>See some Dogs!</h1>
             <div>
