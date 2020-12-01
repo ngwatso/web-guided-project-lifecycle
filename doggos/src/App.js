@@ -17,7 +17,6 @@ class App extends React.Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        console.log("update")
         if (prevState.dogPics !== this.state.dogPics) {
             if (this.state.input === 'chihuahua') {
                 fetchDogs("husky")
