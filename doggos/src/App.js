@@ -27,9 +27,10 @@ class App extends React.Component {
     onSubmit = (e) => {
         e.preventDefault();
         console.log(this.state.input);
-        this.setState({
-            input:""
-        });
+        
+        // this.setState({
+        //     input:""
+        // });
     }
 
     render() {
