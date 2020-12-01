@@ -2,20 +2,17 @@ import React, { useState, useEffect } from "react";
 
 const AppFunc = () => {
   const [name, setName] = useState("Warren");
+  
   const handleClick = () => {
     setName("Allison");
   };
-  console.log("APPFUNC: Component Constructed");
-
+  
   useEffect(()=>{
-    console.log("APPFUNC: Component Mounted");
   }, []);
 
   useEffect(()=>{
-    console.log("APPFUNC: Component Updated");
   });
 
-  console.log("APPFUNC: Component Rendered");
   return (
     <div>
       <h1>Hello {name}!</h1>
