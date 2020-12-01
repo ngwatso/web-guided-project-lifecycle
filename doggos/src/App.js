@@ -16,14 +16,12 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('https://dog.ceo/api/breed/husky/images')
-            .then((resp)=> {
-                console.log(resp);
+        fetchDogs("husky")
+            .then((resp)=>{
                 this.setState({
-                    dogPics: resp.data.message
+                    dogPics:resp.data.message
                 });
-            })
-            .catch(err=> console.log(err));
+            });
     }
 
     onChange = (e) => {
