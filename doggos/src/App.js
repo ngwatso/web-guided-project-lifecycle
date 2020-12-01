@@ -33,15 +33,12 @@ class App extends React.Component {
     onSubmit = (e) => {
         e.preventDefault();
         console.log(this.state.input);
-        
-        axios.get(`https://dog.ceo/api/breed/${this.state.input}/images`)
-            .then((resp)=> {
-                console.log(resp);
+        fetchDogs(this.state.input)
+            .then(resp=>{
                 this.setState({
                     dogPics: resp.data.message
-                });
-            })
-            .catch(err=> console.log(err));
+                })
+            });
     }
 
     render() {
