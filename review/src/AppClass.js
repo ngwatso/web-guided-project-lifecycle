@@ -20,6 +20,10 @@ class AppClass extends React.Component {
     console.log("AppClass: Component mounted.");
   }
 
+  componentDidUpdate() {
+    console.log("AppClass: Component updated.");
+  }
+
   render() {
     console.log("AppClass: Component rendered.");
     return (
