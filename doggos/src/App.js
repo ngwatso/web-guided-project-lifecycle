@@ -16,6 +16,9 @@ class App extends React.Component {
             });
     }
 
+    componentDidUpdate(prevProps, prevState) {
+    }
+
     onChange = (e) => {
         this.setState({
             input:e.target.value
