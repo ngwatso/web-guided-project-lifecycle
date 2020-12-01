@@ -3,7 +3,8 @@ import axios from 'axios';
 
 class App extends React.Component {
     state = {
-        dogPics:[]
+        dogPics:[],
+        input: "husky"
     }
 
     componentDidMount() {
@@ -26,17 +27,19 @@ class App extends React.Component {
         //4. Add Submit flow
         return(<div>
             <h1>See some Dogs!</h1>
-            <form onSubmit={this.onSubmit}>
+
+            <form >
                 <label>
                     Search for a breed:
                     <input 
-                    value={this.state.input}
+                    // value={this.state.input}
                     placeholder='enter a breed'
-                    onChange={this.onChange}
+                    // onChange={this.onChange}
                     />
                 </label>
                 <button>Search</button>
             </form>
+
             <div>
                 {
                     this.state.dogPics.map(dogPic => (
