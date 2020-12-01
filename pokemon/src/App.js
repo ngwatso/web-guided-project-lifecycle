@@ -13,6 +13,10 @@ class App extends React.Component {
     };
   }
 
+  componentDidMount() {
+    console.log("App: Component Mounted");
+  }
+
   render() {
     return (
       <div className="App">
