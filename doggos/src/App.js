@@ -32,9 +32,9 @@ class App extends React.Component {
                 <label>
                     Search for a breed:
                     <input 
-                    // value={this.state.input}
+                    value={this.state.input}
                     placeholder='enter a breed'
-                    // onChange={this.onChange}
+                    onChange={this.onChange}
                     />
                 </label>
                 <button>Search</button>
