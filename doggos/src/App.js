@@ -23,7 +23,7 @@ class App extends React.Component {
             <div>
                 {
                     this.state.dogPics.map(dogPic => (
-                          <img src={dogPic} alt={dogPic} key={dogPic} />
+                          <img width="200" src={dogPic} alt={dogPic} key={dogPic} />
                     ))
                 }
             </div>
