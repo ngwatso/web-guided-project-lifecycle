@@ -6,6 +6,10 @@ class App extends React.Component {
         dogPic:[]
     }
 
+    componentDidMount() {
+        axios
+    }
+
     render() {
         return(<div>
             <h1>See some Dogs!</h1>
