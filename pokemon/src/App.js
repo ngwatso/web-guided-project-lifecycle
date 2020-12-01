@@ -22,7 +22,9 @@ class App extends React.Component {
     console.log("App: Component Rendered");
     return (
       <div className="App">
-        <Pokemon pokemon={this.state.pokemon} />
+        {
+          ((this.state.pokemon.length === 0)?<h1>Loading data</h1>:<Pokemon pokemon={this.state.pokemon} />)
+        }
       </div>
     );
   }
