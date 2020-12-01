@@ -18,11 +18,14 @@ class App extends React.Component {
     }
 
     render() {
-        console.log("state:", this.state.dogPics);
         return(<div>
             <h1>See some Dogs!</h1>
             <div>
-
+                {
+                    this.state.dogPics.map(dogPic => (
+                        <img src={}    
+                    ))
+                }
             </div>
         </div>)
     }
