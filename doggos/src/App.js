@@ -36,10 +36,6 @@ class App extends React.Component {
     }
 
     render() {
-        //1. Add in a form for search
-        //2. Add to search term to state.
-        //3. Add Change flow to input.
-        //4. Add Submit flow
         return(<div>
             <h1>See some Dogs!</h1>
 
