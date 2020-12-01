@@ -26,7 +26,7 @@ class App extends React.Component {
 
     onSubmit = (e) => {
         e.preventDefault();
-
+        console.log(this.state.input);
     }
 
     render() {
@@ -37,11 +37,11 @@ class App extends React.Component {
         return(<div>
             <h1>See some Dogs!</h1>
 
-            <form >
+            <form onSubmit={this.onSubmit}>
                 <label>
                     Search for a breed:
                     <input 
-                        value={this.state.input}
+                        // value={this.state.input}
                         placeholder='enter a breed'
                         onChange={this.onChange}
                     />
