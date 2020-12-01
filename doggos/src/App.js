@@ -8,6 +8,9 @@ class App extends React.Component {
 
     componentDidMount() {
         axios.get('https://dog.ceo/api/husky/images')
+            .then((resp)=> {
+                console.log(resp);
+            })
     }
 
     render() {
