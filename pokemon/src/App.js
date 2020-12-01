@@ -21,7 +21,7 @@ class App extends React.Component {
 
   componentDidUpdate(prevProps, prevState) {
     console.log("App: Component updated");
-
+    
     console.log("-----------");
     console.log("old props: ", prevProps);
     console.log("new props: ", this.props);
