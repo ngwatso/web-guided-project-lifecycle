@@ -1,6 +1,10 @@
 import React from 'react';
 import axios from 'axios';
 
+const fetchDogs = (breed) => {
+    
+}
+
 class App extends React.Component {
     state = {
         dogPics:[],
