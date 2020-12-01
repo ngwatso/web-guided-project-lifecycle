@@ -20,7 +20,11 @@ class App extends React.Component {
       this.setState({
         pokemon: data
       });
-    }, 2000);
+    }, 3000);
+  }
+
+  componentDidUpdate() {
+    console.log("App: Component updated");
   }
 
   render() {
