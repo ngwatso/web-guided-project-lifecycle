@@ -2,12 +2,14 @@ import React, { useState, useEffect } from "react";
 
 const AppFunc = () => {
   const [name, setName] = useState("Warren");
-  
+  console.log("AppFunc: State setup.");
+
   const handleClick = () => {
     setName("Allison");
   };
   
   useEffect(()=>{
+    console.log("AppFunc: Component Has Mounted.");
   }, []);
 
   useEffect(()=>{
