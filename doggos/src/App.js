@@ -7,7 +7,7 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        axios
+        axios.get('https://dog.ceo/api/husky/images')
     }
 
     render() {
