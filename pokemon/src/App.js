@@ -6,12 +6,8 @@ import './styles.scss';
 import Pokemon from './components/Pokemon';
 
 class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      pokemon: []
-    };
-    console.log("App: Component State Setup");
+  state = {
+    pokemon: []
   }
 
   componentDidMount() {
@@ -25,7 +21,7 @@ class App extends React.Component {
 
   componentDidUpdate(prevProps, prevState) {
     console.log("App: Component updated");
-    
+
     console.log("-----------");
     console.log("old props: ", prevProps);
     console.log("new props: ", this.props);
