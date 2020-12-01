@@ -23,7 +23,7 @@ class App extends React.Component {
     }, 3000);
   }
 
-  componentDidUpdate() {
+  componentDidUpdate(prevProps, prevState) {
     console.log("App: Component updated");
   }
 
