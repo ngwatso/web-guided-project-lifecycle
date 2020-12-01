@@ -2,7 +2,9 @@ import React, {useEffect} from 'react';
 import PropTypes from 'prop-types';
 
 function Pokemon(props) {
-
+  useEffect(()=>{
+    console.log("Pokemon: Component Mounted.");
+  }, []);
 
   console.log("Pokemon: Component Rendered.");
   return (
