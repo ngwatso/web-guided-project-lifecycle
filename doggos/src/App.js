@@ -24,6 +24,11 @@ class App extends React.Component {
         });
     } 
 
+    onSubmit = (e) => {
+        e.preventDefault();
+
+    }
+
     render() {
         //1. Add in a form for search
         //2. Add to search term to state.
