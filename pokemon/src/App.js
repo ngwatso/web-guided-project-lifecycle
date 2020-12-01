@@ -9,7 +9,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      pokemon: data
+      pokemon: []
     };
     console.log("App: Component State Setup");
   }
