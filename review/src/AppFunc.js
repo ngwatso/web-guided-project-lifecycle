@@ -16,7 +16,6 @@ const AppFunc = () => {
   return (
     <div>
       <h1>Hello {name}!</h1>
-  
       <button onClick={handleClick}>MAKE IT ALLISON!</button>
     </div>
   );
