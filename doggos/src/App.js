@@ -28,9 +28,11 @@ class App extends React.Component {
         e.preventDefault();
         console.log(this.state.input);
         
-        // this.setState({
-        //     input:""
-        // });
+        //run api call on this.state.input
+
+        this.setState({
+            input:""
+        });
     }
 
     render() {
@@ -45,7 +47,7 @@ class App extends React.Component {
                 <label>
                     Search for a breed:
                     <input 
-                        // value={this.state.input}
+                        value={this.state.input}
                         placeholder='enter a breed'
                         onChange={this.onChange}
                     />
