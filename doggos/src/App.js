@@ -28,7 +28,14 @@ class App extends React.Component {
         e.preventDefault();
         console.log(this.state.input);
         
-        //run api call on this.state.input
+        axios.get(`https://dog.ceo/api/breed/${this.state.input}/images`)
+            .then((resp)=> {
+                console.log(resp);
+                this.setState({
+                    dogPics: resp.data.message
+                });
+            })
+            .catch(err=> console.log(err));
 
         this.setState({
             input:""
