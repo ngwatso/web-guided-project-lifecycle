@@ -7,10 +7,11 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('https://dog.ceo/api/husky/images')
+        axios.get('https://dog.ceo/api/breed/husky/images')
             .then((resp)=> {
                 console.log(resp);
             })
+            .catch(err=> console.log(err));
     }
 
     render() {
