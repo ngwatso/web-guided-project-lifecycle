@@ -17,6 +17,9 @@ class App extends React.Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
+        if (prevState.dogPics !== this.state.dogPics) {
+            
+        }
     }
 
     onChange = (e) => {
