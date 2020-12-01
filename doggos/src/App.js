@@ -18,7 +18,11 @@ class App extends React.Component {
             .catch(err=> console.log(err));
     }
 
-
+    onChange = (e) => {
+        this.setState({
+            input:e.target.value
+        });
+    } 
 
     render() {
         //1. Add in a form for search
@@ -32,9 +36,9 @@ class App extends React.Component {
                 <label>
                     Search for a breed:
                     <input 
-                    value={this.state.input}
-                    placeholder='enter a breed'
-                    onChange={this.onChange}
+                        value={this.state.input}
+                        placeholder='enter a breed'
+                        onChange={this.onChange}
                     />
                 </label>
                 <button>Search</button>
