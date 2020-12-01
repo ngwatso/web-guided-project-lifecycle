@@ -2,7 +2,11 @@ import React from 'react';
 import axios from 'axios';
 
 const fetchDogs = (breed) => {
-    
+    return axios.get(`https://dog.ceo/api/breed/${breed}/images`)
+        .then((resp)=> {
+            return (resp);
+        })
+        .catch(err=> console.log(err));
 }
 
 class App extends React.Component {
