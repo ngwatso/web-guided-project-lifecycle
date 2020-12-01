@@ -17,9 +17,26 @@ class App extends React.Component {
             .catch(err=> console.log(err));
     }
 
+
+
     render() {
+        //1. Add in a form for search
+        //2. Add to search term to state.
+        //3. Add Change flow to input.
+        //4. Add Submit flow
         return(<div>
             <h1>See some Dogs!</h1>
+            <form onSubmit={this.onSubmit}>
+                <label>
+                    Search for a breed:
+                    <input 
+                    value={this.state.input}
+                    placeholder='enter a breed'
+                    onChange={this.onChange}
+                    />
+                </label>
+                <button>Search</button>
+            </form>
             <div>
                 {
                     this.state.dogPics.map(dogPic => (
