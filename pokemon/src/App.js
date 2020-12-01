@@ -11,6 +11,7 @@ class App extends React.Component {
     this.state = {
       pokemon: data
     };
+    console.log("App: Component State Setup");
   }
 
   componentDidMount() {
@@ -18,6 +19,7 @@ class App extends React.Component {
   }
 
   render() {
+    console.log("App: Component Rendered");
     return (
       <div className="App">
         <Pokemon pokemon={this.state.pokemon} />
