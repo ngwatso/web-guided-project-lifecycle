@@ -9,13 +9,14 @@ const AppFunc = () => {
   };
   
   useEffect(()=>{
-    console.log("AppFunc: Component has Mounted.");
+    console.log("AppFunc: Component has mounted.");
   }, []);
 
   useEffect(()=>{
+    console.log("AppFunc: Component has updated.");
   });
 
-  console.log("AppFunc: Component has rendered.")
+  console.log("AppFunc: Component has rendered.");
   return (
     <div>
       <h1>Hello {name}!</h1>
