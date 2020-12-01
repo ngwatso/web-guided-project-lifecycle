@@ -16,9 +16,11 @@ class App extends React.Component {
 
   componentDidMount() {
     console.log("App: Component Mounted");
-    this.setState({
-      pokemon: data
-    });
+    setTimeout(()=>{
+      this.setState({
+        pokemon: data
+      });
+    }, 2000);
   }
 
   render() {
