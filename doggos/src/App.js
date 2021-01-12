@@ -22,6 +22,10 @@ class App extends React.Component {
     render() {
         return(<div>
             <h1> Search the Dogs!</h1>
+            <form>
+                <input type="text"/>
+                <button>Get New Dogs</button>
+            </form>
             <div className="dogContainer">
                 {
                     this.state.dogImages.map(image=>(
