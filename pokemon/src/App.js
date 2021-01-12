@@ -12,6 +12,9 @@ class App extends React.Component {
 
   componentDidMount() {
     console.log("App: Component Did Mount");
+    this.setState({
+        pokemon:data
+      });
   }
 
   componentDidUpdate() {
