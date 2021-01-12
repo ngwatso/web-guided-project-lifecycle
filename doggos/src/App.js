@@ -27,6 +27,7 @@ class App extends React.Component {
     }
 
     handleClick = e => {
+        e.preventDefault();
         axios.get(`https://dog.ceo/api/breed/${this.state.dogBreed}/images`)
             .then(res=>{
                 console.log(res);
