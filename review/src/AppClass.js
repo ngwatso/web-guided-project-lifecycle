@@ -15,18 +15,9 @@ class Person extends React.Component {
 
 
 class AppClass extends React.Component {
-  // constructor() {
-  //   console.log("AppClass: Setup State.");
-  //   super();
-  //   this.state = {
-  //     name: "Warren"
-  //   };
-  // }
-  
   state = {
     name:"Warren"
   }
-
 
   componentDidMount() {
     console.log("AppClass: Component Mounted.");
