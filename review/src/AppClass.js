@@ -2,7 +2,7 @@ import React from "react";
 
 class AppClass extends React.Component {
   constructor() {
-    console.log("AppState: Setup State.");
+    console.log("AppClass: Setup State.");
     super();
     this.state = {
       name: "Warren"
@@ -10,13 +10,14 @@ class AppClass extends React.Component {
   }
 
   handleNameButtonClick = (e) => {
+    console.log("AppClass: Handle Click.");
     this.setState({
-      ...this.state,
       name: "Allison"
     });
   };
 
   render() {
+    console.log("AppClass: Render component.");
     return (
       <div>
         <h1>Hello {this.state.name}.</h1>
