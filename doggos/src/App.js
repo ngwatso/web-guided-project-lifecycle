@@ -20,8 +20,8 @@ class App extends React.Component {
             });
     }
 
-    handleChange = ()=> {
-        
+    handleChange = e => {
+        this.state.dogBreed = e.target.value;
     }
 
     render() {
