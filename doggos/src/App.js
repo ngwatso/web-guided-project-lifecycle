@@ -11,7 +11,7 @@ class App extends React.Component {
             .then((res)=>{
                 console.log(res);
                 this.setState({
-                    dogImages: res
+                    dogImages: res.data.message
                 })
             })
             .catch(err=>{
@@ -20,8 +20,6 @@ class App extends React.Component {
     }
 
     render() {
-        console.log(this.state.dogImages);
-        
         return(<div>
             <h1> Search the Dogs!</h1>
             <div className="dogContainer">
