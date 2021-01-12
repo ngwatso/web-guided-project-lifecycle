@@ -22,8 +22,10 @@ class App extends React.Component {
     
     componentDidUpdate(prevProps, prevState) {
         console.log("CDU:");
-        console.log(prevState);
-        console.log(this.state);
+        if(prevState.dogImages !== this.state.dogImages){
+            console.log(prevState);
+            console.log(this.state);
+        }
     }
 
     handleChange = e => {
