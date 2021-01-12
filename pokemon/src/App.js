@@ -27,6 +27,9 @@ class App extends React.Component {
 
     console.log("old state ", prevState);
     console.log("new state:", this.state);
+    if (prevState.pokemon.length !== this.state.pokemon.length) {
+
+    }
   }
 
   render() {
