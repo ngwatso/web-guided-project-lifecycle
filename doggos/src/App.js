@@ -3,7 +3,8 @@ import axios from 'axios';
 
 class App extends React.Component {
     state = {
-        dogImages: []
+        dogImages: [],
+        dogBreed: ""
     }
 
     componentDidMount() {
@@ -26,6 +27,7 @@ class App extends React.Component {
                 <input type="text"/>
                 <button>Get New Dogs</button>
             </form>
+
             <div className="dogContainer">
                 {
                     this.state.dogImages.map(image=>(
