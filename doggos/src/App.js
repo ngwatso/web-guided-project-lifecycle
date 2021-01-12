@@ -21,10 +21,10 @@ class App extends React.Component {
     }
     
     componentDidUpdate(prevProps, prevState) {
-        console.log("CDU:");
         if(prevState.dogImages !== this.state.dogImages){
-            console.log(prevState);
-            console.log(this.state);
+            if (this.state.dogBreed === "chihuahua") {
+                console.log("DONT WANT chihuahuass!!!");
+            }
         }
     }
 
