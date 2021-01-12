@@ -15,7 +15,7 @@ class App extends React.Component {
   }
 
   componentDidUpdate() {
-    console.log("App: Componet Did Update");
+    console.log("App: Component Did Update");
   }
 
   render() {
