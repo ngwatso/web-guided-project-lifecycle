@@ -1,5 +1,12 @@
 import React from "react";
 
+class Person extends React.Component {
+  render() {
+    
+  }
+}
+
+
 class AppClass extends React.Component {
   constructor() {
     console.log("AppClass: Setup State.");
