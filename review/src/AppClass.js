@@ -2,6 +2,7 @@ import React from "react";
 
 class AppClass extends React.Component {
   constructor() {
+    console.log("AppState: Setup State.");
     super();
     this.state = {
       name: "Warren"
