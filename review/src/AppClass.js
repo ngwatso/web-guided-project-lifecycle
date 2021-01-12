@@ -22,6 +22,9 @@ class AppClass extends React.Component {
 
   componentDidMount() {
     console.log("AppClass: Component Mounted.");
+    this.setState({
+      showPerson: true
+    });
   }
 
   componentDidUpdate() {
