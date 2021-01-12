@@ -2,7 +2,9 @@ import React from "react";
 
 class Person extends React.Component {
   render() {
-    
+    return(<div>
+      <h1>Hello {this.props.name}</h1>
+    </div>);
   }
 }
 
@@ -35,7 +37,8 @@ class AppClass extends React.Component {
     console.log("AppClass: Render Component.");
     return (
       <div>
-        <h1>Hello {this.state.name}.</h1>
+        {/* <h1>Hello {this.state.name}.</h1> */}
+        <Person name={this.state.name}/>
         <button onClick={this.handleNameButtonClick}>MAKE IS ALLISON</button>
       </div>
     );
