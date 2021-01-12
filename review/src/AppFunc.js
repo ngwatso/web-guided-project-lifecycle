@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 
 const AppFunc = () => {
-  const [name, setName] = useState("Warren");
   console.log("AppFunc: Set State");
+  const [name, setName] = useState("Warren");
 
   const handleClick = () => {
     setName("Allison");
   };
   
+  console.log("AppFunc: Render");
   return (
     <div>
       <h1>Hello {name}!</h1>
