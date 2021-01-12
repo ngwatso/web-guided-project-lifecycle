@@ -26,9 +26,6 @@ class AppClass extends React.Component {
 
   componentDidUpdate() {
     console.log("AppClass: Component Updated.");
-    this.setState({
-      showPerson: true
-    });
   }
 
   handleNameButtonClick = (e) => {
