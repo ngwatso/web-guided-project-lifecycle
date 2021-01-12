@@ -13,9 +13,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {
-          ((this.state.pokemon.length === 0)?<h1>Loading data</h1>:<Pokemon pokemon={this.state.pokemon} />)
-        }
+        <Pokemon pokemon={this.state.pokemon} />
       </div>
     );
   }
