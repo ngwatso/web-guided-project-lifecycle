@@ -26,12 +26,16 @@ class App extends React.Component {
         });
     }
 
+    handleClick = e => {
+        
+    }
+
     render() {
         return(<div>
             <h1> Search the Dogs!</h1>
             <form>
                 <input onChange={this.handleChange} type="text"/>
-                <button>Get New Dogs</button>
+                <button onClick={this.handleClick}>Get New Dogs</button>
             </form>
 
             <div className="dogContainer">
