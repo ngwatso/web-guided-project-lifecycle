@@ -9,7 +9,13 @@ const AppFunc = () => {
     setName("Allison");
   };
   
-  
+  useEffect(()=>{
+    console.log("AppFunc: Component Has Mounted");
+  }, []);
+
+  useEffect(()=> {
+    console.log("AppFunc: Component Has Updated");
+  });
 
   console.log("AppFunc: Render");
   return (
