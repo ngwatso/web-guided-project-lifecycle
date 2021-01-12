@@ -20,11 +20,15 @@ class App extends React.Component {
             });
     }
 
+    handleChange = ()=> {
+        
+    }
+
     render() {
         return(<div>
             <h1> Search the Dogs!</h1>
             <form>
-                <input type="text"/>
+                <input onChange={handleChange} type="text"/>
                 <button>Get New Dogs</button>
             </form>
 
