@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 
 const AppFunc = () => {
   console.log("AppFunc: Set State");
-  const [name, setName] = useState("Warren");
+  const [name, setState] = useState("Warren");
 
   const handleClick = () => {
     console.log("AppFunc: Handle Click");
-    setName("Allison");
+    setState("Allison");
   };
   
   useEffect(()=>{
