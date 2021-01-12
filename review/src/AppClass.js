@@ -22,13 +22,13 @@ class AppClass extends React.Component {
 
   componentDidMount() {
     console.log("AppClass: Component Mounted.");
-    this.setState({
-      showPerson: true
-    });
   }
 
   componentDidUpdate() {
     console.log("AppClass: Component Updated.");
+    this.setState({
+      showPerson: true
+    });
   }
 
   handleNameButtonClick = (e) => {
