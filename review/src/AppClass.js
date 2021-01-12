@@ -40,7 +40,7 @@ class AppClass extends React.Component {
     return (
       <div>
         {
-          (this.state.showPerson === true)?<Person name={this.state.name}/>:<div></div>
+          (this.state.showPerson === true)?<Person name={this.state.name}/>:<div>NOTHING!!!</div>
         }
         <button onClick={this.handleNameButtonClick}>MAKE IS ALLISON</button>
       </div>
