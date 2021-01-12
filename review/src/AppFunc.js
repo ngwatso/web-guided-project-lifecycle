@@ -5,6 +5,7 @@ const AppFunc = () => {
   const [name, setName] = useState("Warren");
 
   const handleClick = () => {
+    console.log("AppFunc: Handle Click");
     setName("Allison");
   };
   
