@@ -10,6 +10,14 @@ class App extends React.Component {
     pokemon: data
   }
 
+  componentDidMount() {
+    console.log("App: Component Did Mount");
+  }
+
+  componentDidUpdate() {
+    console.log("App: Componet Did Update");
+  }
+
   render() {
     console.log("App: Component Renders");
     return (
