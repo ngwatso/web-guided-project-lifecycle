@@ -25,7 +25,7 @@ class App extends React.Component {
             <div className="dogContainer">
                 {
                     this.state.dogImages.map(image=>(
-                        <img src={image}/>
+                        <img width="200" key={image} src={image}/>
                     ))
                 }
             </div>
