@@ -17,12 +17,19 @@ class App extends React.Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
+        console.log("updating component");
+        console.log("***********");
+        console.log(prevState);
+        console.log(this.state);
+
         if (prevState.dogPics !== this.state.dogPics) {
+            console.log("updating component dogPics");
             if (this.state.input === 'chihuahua') {
                 fetchDogs("husky")
                     .then((resp)=>{
                         this.setState({
-                            dogPics:resp.data.message
+                            dogPics:resp.data.message,
+                            input:"husky"
                         });
                     });
             }
