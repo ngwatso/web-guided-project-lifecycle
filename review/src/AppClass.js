@@ -1,6 +1,10 @@
 import React from "react";
 
 class Person extends React.Component {
+  componentDidUpdate() {
+    console.log("Person: Component Updated");
+  }
+
   render() {
     return(<div>
       <h1>Hello {this.props.name}</h1>
