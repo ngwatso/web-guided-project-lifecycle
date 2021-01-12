@@ -21,7 +21,9 @@ class App extends React.Component {
     }
 
     handleChange = e => {
-        this.state.dogBreed = e.target.value;
+        this.setState({
+            dogBreed: e.target.value
+        });
     }
 
     render() {
