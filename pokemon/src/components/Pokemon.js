@@ -3,10 +3,9 @@ import PropTypes from 'prop-types';
 
 function Pokemon(props) {
   useEffect(()=>{
-    console.log("Pokemon: Component Mounted.");
+    
   }, []);
 
-  console.log("Pokemon: Component Rendered.");
   return (
     <>
       {props.pokemon.map(pokemon => (
