@@ -19,6 +19,11 @@ class App extends React.Component {
                 console.log(err);
             });
     }
+    
+    componentDidUpdate(prevProps, prevState) {
+        console.log(prevState);
+        console.log(this.state);
+    }
 
     handleChange = e => {
         this.setState({
