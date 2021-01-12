@@ -27,7 +27,7 @@ class App extends React.Component {
     }
 
     handleClick = e => {
-        
+        axios.get(`https://dog.ceo/api/breed/{this.state.dogBredd}/images`)
     }
 
     render() {
