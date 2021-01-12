@@ -16,7 +16,8 @@ class Person extends React.Component {
 
 class AppClass extends React.Component {
   state = {
-    name:"Warren"
+    name:"Warren",
+    showPerson: false
   }
 
   componentDidMount() {
@@ -38,8 +39,9 @@ class AppClass extends React.Component {
     console.log("AppClass: Render Component.");
     return (
       <div>
-        {/* <h1>Hello {this.state.name}.</h1> */}
-        <Person name={this.state.name}/>
+        {
+          (this.state.showPerson === true)?<Person name={this.state.name}/>:<div></div>
+        }
         <button onClick={this.handleNameButtonClick}>MAKE IS ALLISON</button>
       </div>
     );
