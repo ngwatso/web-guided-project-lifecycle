@@ -1,8 +1,13 @@
 import React from 'react';
+import axios from 'axios';
 
 class App extends React.Component {
     state = {
         dogImages: ["https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"]
+    }
+
+    componentDidMount() {
+
     }
 
     render() {
