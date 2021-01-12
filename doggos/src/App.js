@@ -23,7 +23,16 @@ class App extends React.Component {
     componentDidUpdate(prevProps, prevState) {
         if(prevState.dogImages !== this.state.dogImages){
             if (this.state.dogBreed === "chihuahua") {
-                console.log("DONT WANT chihuahuass!!!");
+                axios.get("https://dog.ceo/api/breed/hound/images")
+                    .then((res)=>{
+                        console.log(res);
+                        this.setState({
+                            dogImages: res.data.message
+                        })
+                    })
+                    .catch(err=>{
+                        console.log(err);
+                    });
             }
         }
     }
