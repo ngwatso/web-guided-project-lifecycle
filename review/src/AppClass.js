@@ -6,6 +6,7 @@ class Person extends React.Component {
   }
 
   render() {
+    console.log("Person: Component Rendered");
     return(<div>
       <h1>Hello {this.props.name}</h1>
     </div>);
